@@ -19,9 +19,9 @@
 -1 -1;
 #X floatatom 207 128 5 0 0 0 - - -, f 5;
 #X obj 206 106 +;
-#X msg 205 82 1;
+#X msg 206 83 1;
 #X obj 205 152 sel 1 2;
-#X obj 695 45 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 695 45 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 695 69 5 0 0 0 - - -, f 5;
 #X obj 674 45 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -32,7 +32,7 @@
 #X obj 854 97 loadbang;
 #X msg 161 110 0;
 #X text 181 42 footswitch;
-#X text 616 26 retrigger if active;
+#X text 570 87 retrigger if active;
 #X floatatom 320 77 5 0 0 0 - - -, f 5;
 #X obj 825 518 table \$1 288000;
 #X obj 155 349 tabwrite~ \$1;
@@ -46,11 +46,21 @@
 #X obj 328 219 spigot;
 #X msg 329 195 1;
 #X msg 362 195 0;
-#X obj 328 240 sel 0;
+#X obj 325 251 sel 0;
 #X obj 320 54 r bpm4;
 #X obj 533 30 r bpm1;
 #X obj 533 51 sel 0;
+#X obj 51 148 timer;
+#X floatatom 91 97 5 0 0 0 - - -, f 5;
+#X obj 91 117 sel 0 1;
+#X floatatom 51 169 10 0 0 0 - - -, f 10;
+#X obj 51 196 expr $f1 < 500;
+#X obj 127 149 delay 600;
+#X floatatom 51 217 5 0 0 0 - - -, f 5;
+#X obj 51 237 sel 1;
+#X msg 51 258 0;
 #X connect 0 0 17 0;
+#X connect 0 0 47 0;
 #X connect 1 0 31 0;
 #X connect 1 1 31 0;
 #X connect 2 0 3 0;
@@ -71,6 +81,7 @@
 #X connect 17 0 16 0;
 #X connect 18 0 34 0;
 #X connect 18 1 40 0;
+#X connect 18 2 40 0;
 #X connect 19 0 20 0;
 #X connect 20 0 22 0;
 #X connect 20 0 23 1;
@@ -100,3 +111,14 @@
 #X connect 43 0 29 0;
 #X connect 44 0 45 0;
 #X connect 45 0 23 0;
+#X connect 46 0 49 0;
+#X connect 47 0 48 0;
+#X connect 48 0 46 0;
+#X connect 48 0 51 0;
+#X connect 48 1 46 1;
+#X connect 49 0 50 0;
+#X connect 50 0 52 0;
+#X connect 51 0 46 1;
+#X connect 52 0 53 0;
+#X connect 53 0 54 0;
+#X connect 54 0 19 0;
