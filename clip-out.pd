@@ -1,4 +1,4 @@
-#N canvas 1005 600 867 386 10;
+#N canvas 588 526 1065 246 10;
 #X obj 232 25 inlet;
 #X obj 325 25 inlet;
 #X obj 484 25 inlet;
@@ -50,6 +50,11 @@
 -1;
 #X obj 674 67 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X obj 851 31 inlet;
+#X text 847 9 bank-off;
+#X obj 851 73 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 851 52 0;
 #X connect 0 0 21 0;
 #X connect 0 0 25 0;
 #X connect 1 0 21 0;
@@ -89,3 +94,7 @@
 #X connect 30 0 36 0;
 #X connect 31 0 17 1;
 #X connect 31 0 37 0;
+#X connect 41 0 44 0;
+#X connect 43 0 21 0;
+#X connect 44 0 43 0;
+#X connect 44 0 17 1;

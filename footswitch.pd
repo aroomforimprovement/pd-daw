@@ -28,7 +28,7 @@
 1;
 #X obj 136 145 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 164 145 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 164 145 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 193 145 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -55,6 +55,8 @@
 #X text 263 184 B;
 #X text 310 184 C;
 #X text 354 184 D;
+#X obj 408 165 outlet;
+#X text 411 182 bank-on;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 0 2 3 0;
@@ -84,4 +86,5 @@
 #X connect 19 0 27 0;
 #X connect 20 0 28 0;
 #X connect 29 0 31 1;
+#X connect 29 0 40 0;
 #X connect 31 0 4 0;

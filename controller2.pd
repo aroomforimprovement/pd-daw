@@ -1,4 +1,4 @@
-#N canvas 1262 391 597 531 10;
+#N canvas 1307 634 597 258 10;
 #X msg 360 25 \; pd dsp 1;
 #X msg 428 24 \; pd dsp 0;
 #X obj 90 49 bank-selector, f 34;
@@ -26,12 +26,10 @@
 #X msg 474 124 0 100;
 #X msg 435 103 0.9 100;
 #X obj 435 79 loadbang;
-#X floatatom 66 135 5 0 0 0 - - -, f 5;
-#X obj 146 226 bpm, f 14;
-#X floatatom 130 255 5 0 0 0 - - -, f 5;
-#X floatatom 181 254 5 0 0 0 - - -, f 5;
-#X floatatom 233 254 5 0 0 0 - - -, f 5;
-#X obj 65 177 metro-out;
+#X obj 158 163 bpm, f 14;
+#X floatatom 142 192 5 0 0 0 - - -, f 5;
+#X floatatom 193 191 5 0 0 0 - - -, f 5;
+#X floatatom 245 191 5 0 0 0 - - -, f 5;
 #X connect 2 0 4 0;
 #X connect 2 1 3 0;
 #X connect 2 2 6 0;
@@ -48,7 +46,6 @@
 #X connect 16 0 15 1;
 #X connect 17 0 15 0;
 #X connect 18 0 17 0;
-#X connect 19 0 24 0;
-#X connect 20 0 21 0;
-#X connect 20 1 22 0;
-#X connect 20 2 23 0;
+#X connect 19 0 20 0;
+#X connect 19 1 21 0;
+#X connect 19 2 22 0;
