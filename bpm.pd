@@ -70,9 +70,9 @@
 #X connect 22 0 0 0;
 #X connect 23 0 28 0;
 #X connect 23 0 31 0;
-#X connect 23 0 34 0;
 #X connect 24 0 29 0;
 #X connect 24 0 32 0;
+#X connect 24 0 34 0;
 #X connect 25 0 30 0;
 #X connect 25 0 33 0;
 #X connect 26 0 13 0;

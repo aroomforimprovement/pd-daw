@@ -8,21 +8,21 @@
 #X obj 279 193 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 1 256;
 #X obj 432 64 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 1 256;
 #X obj 507 65 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 431 138 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 1 256;
 #X obj 356 104 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 1 256;
 #X obj 281 104 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 1 256;
 #X obj 506 103 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 431 103 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 1 256;
 #X obj 356 145 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 1 256;
 #X obj 281 145 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 1 256;
 #X obj 506 144 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
@@ -30,7 +30,7 @@
 #X obj 357 70 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 1 256;
 #X obj 356 183 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 1 256;
 #X obj 283 68 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 1 256;
 #X obj 506 182 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
@@ -44,7 +44,7 @@
 #X obj 919 64 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 844 64 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 4 256;
+-1 -1 0 256;
 #X obj 768 103 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 693 103 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
@@ -60,7 +60,7 @@
 #X obj 918 143 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 843 143 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 4 256;
 #X obj 768 182 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 693 182 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
@@ -70,9 +70,9 @@
 #X obj 843 181 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 1290 65 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 8 256;
 #X obj 1215 65 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 9 256;
 #X obj 1440 64 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 1365 64 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
