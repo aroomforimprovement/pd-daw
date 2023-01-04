@@ -1,4 +1,4 @@
-#N canvas 267 213 867 517 10;
+#N canvas 2 19 867 517 10;
 #X floatatom 167 56 5 0 0 0 - - -, f 5;
 #X floatatom 210 55 5 0 0 0 - - -, f 5;
 #X obj 62 106 spigot;
@@ -11,21 +11,21 @@
 #X obj 538 433 outlet;
 #X obj 637 435 outlet;
 #X obj 735 433 outlet;
-#X obj 48 172 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 50 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 140 166 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 142 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 186 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 188 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 248 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 250 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 326 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 328 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 416 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 418 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 500 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 502 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 592 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 594 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 16 337 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
@@ -43,14 +43,14 @@
 1;
 #X obj 735 337 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 49 196 delay 100;
-#X obj 125 196 delay 100;
-#X obj 186 196 delay 100;
-#X obj 248 196 delay 100;
-#X obj 326 196 delay 100;
-#X obj 416 196 delay 100;
-#X obj 500 196 delay 100;
-#X obj 592 196 delay 100;
+#X obj 51 182 delay 100;
+#X obj 127 182 delay 100;
+#X obj 188 182 delay 100;
+#X obj 250 182 delay 100;
+#X obj 328 182 delay 100;
+#X obj 418 182 delay 100;
+#X obj 502 182 delay 100;
+#X obj 594 182 delay 100;
 #X obj 214 100 sel 82 83 84 85 86 87 88 89 98, f 56;
 #X text 215 83 to work with v-btns AKAI min;
 #X msg 53 388 82;
