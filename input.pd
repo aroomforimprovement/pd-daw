@@ -1,0 +1,6 @@
+#N canvas 1341 568 450 300 10;
+#X obj 234 175 outlet~;
+#X obj 111 90 adc~;
+#X obj 131 133 pitch-down;
+#X connect 1 1 2 0;
+#X connect 2 0 0 0;
