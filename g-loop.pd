@@ -133,7 +133,7 @@
 #X connect 28 0 30 0;
 #X connect 29 0 15 0;
 #X restore 616 386 pd clipout;
-#N canvas 13 494 450 300 increment 1;
+#N canvas 13 494 450 300 increment 0;
 #X obj 137 64 inlet;
 #X msg 137 88 1;
 #X obj 137 111 +;
@@ -159,7 +159,7 @@
 #X restore 134 65 pd increment;
 #X obj 179 32 r \$1clear;
 #X obj 19 137 s \$1que-play;
-#N canvas 1025 608 606 333 record 1;
+#N canvas 1025 608 606 333 record 0;
 #X obj 219 37 inlet;
 #X obj 172 89 spigot;
 #X msg 219 65 1;
@@ -211,7 +211,7 @@
 #X restore 147 116 pd record;
 #X obj 157 94 s \$1que-rec;
 #X obj 245 118 s \$1que-play;
-#N canvas 1275 7 621 505 play-loop 1;
+#N canvas 1275 7 621 505 play-loop 0;
 #X obj 100 17 r bpm4;
 #X obj 103 162 spigot;
 #X text 234 4 from que-play;
@@ -262,7 +262,7 @@
 #X msg 262 314 1;
 #X msg 231 302 0;
 #X obj 386 464 sel 0;
-#X msg 438 463 0;
+#X msg 453 321 0;
 #X obj 386 434 spigot;
 #X obj 262 269 r \$1rec;
 #X obj 320 279 r \$1clear;
