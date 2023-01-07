@@ -265,7 +265,7 @@
 #X floatatom 576 180 5 0 0 0 - - -, f 5;
 #X obj 2412 424 inlet;
 #X text 2413 405 bank-on;
-#X obj -24 50 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj -24 50 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X text -36 30 bank-on;
 #X obj -24 94 sel 1;
@@ -277,6 +277,7 @@
 #X floatatom 2412 445 5 0 0 0 - - -, f 5;
 #X obj 823 870 *~ 0.3;
 #X obj 823 891 output;
+#X obj -55 112 delay 50;
 #X connect 0 0 257 0;
 #X connect 1 0 0 0;
 #X connect 2 0 257 0;
@@ -635,10 +636,11 @@
 #X connect 248 0 250 0;
 #X connect 248 0 256 0;
 #X connect 250 0 255 0;
-#X connect 252 0 240 0;
+#X connect 252 0 259 0;
 #X connect 252 1 253 0;
 #X connect 253 0 254 0;
 #X connect 253 0 239 10;
 #X connect 254 0 239 10;
 #X connect 255 0 252 0;
 #X connect 257 0 258 0;
+#X connect 259 0 240 0;
