@@ -1,10 +1,10 @@
-#N canvas 747 0 682 325 10;
+#N canvas 625 195 682 325 10;
 #X msg 360 25 \; pd dsp 1;
 #X msg 428 24 \; pd dsp 0;
 #X obj 90 49 bank-selector, f 34;
 #X obj 116 77 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 90 77 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 90 77 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X obj 171 78 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -61,7 +61,7 @@
 #X restore 360 143 pd input;
 #X obj 398 220 output;
 #X obj 611 72 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 8001 1;
+-1 -1 0 1;
 #X connect 2 0 4 0;
 #X connect 2 1 3 0;
 #X connect 2 2 6 0;
