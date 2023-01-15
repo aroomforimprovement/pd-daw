@@ -1,7 +1,7 @@
 #N canvas 496 16 757 454 10;
 #X obj 619 419 table \$1 1.152e+006;
 #X text 119 14 footswitch;
-#N canvas 847 337 379 337 doubletap 0;
+#N canvas 847 337 379 337 doubletap 1;
 #X obj 58 17 inlet;
 #X text 98 16 1/0 from footswitch;
 #X obj 101 38 sel 1;
@@ -184,7 +184,7 @@
 #X obj 98 151 r \$1clear;
 #X obj 157 220 s \$1stop-rec;
 #X obj 517 15 r \$1play-active;
-#X obj 517 36 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 517 36 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 484 61 spigot;
 #X obj 447 14 r \$1switch;
@@ -286,7 +286,7 @@
 #X obj 103 162 spigot;
 #X text 234 4 from que-play;
 #X msg 67 205 1;
-#X obj 103 225 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 103 225 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 121 225 active;
 #X obj 103 245 sel 1;
@@ -394,7 +394,6 @@
 #X connect 31 0 32 0;
 #X connect 32 0 33 0;
 #X connect 33 0 34 0;
-#X connect 34 0 32 1;
 #X connect 35 0 37 0;
 #X connect 36 0 37 1;
 #X connect 36 0 45 1;
