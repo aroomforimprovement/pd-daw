@@ -30,7 +30,7 @@
 #X obj 322 441 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 250 503 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 5 256;
+-1 -1 0 256;
 #X obj 171 505 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 4 256;
 #X obj 397 505 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
@@ -40,11 +40,11 @@
 #X obj 244 566 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 9 256;
 #X obj 168 566 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 9 256;
+-1 -1 4 256;
 #X obj 393 566 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 318 566 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 9 256;
+-1 -1 4 256;
 #X obj 241 625 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 166 625 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
@@ -78,8 +78,8 @@
 #X obj 242 119 spigot;
 #X obj 275 53 sel 0;
 #X obj 275 73 spigot;
-#X msg 275 94 1;
-#X msg 418 364 0;
+#X msg 307 124 1;
+#X msg 458 363 0;
 #X obj 381 28 inlet;
 #X text 379 8 decay;
 #X floatatom 381 49 5 0 0 0 - - -, f 5;
@@ -89,6 +89,12 @@
 #X obj 503 183 clip-out, f 33;
 #X obj 438 69 sel 1 0;
 #X obj 314 906 output;
+#X obj 579 66 \$1;
+#X obj 561 48 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 314 101 5 0 0 0 - - -, f 5;
+#X obj 458 384 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 15 0;
 #X connect 1 0 0 0;
 #X connect 2 0 15 0;
@@ -173,14 +179,21 @@
 #X connect 56 0 17 0;
 #X connect 57 0 58 0;
 #X connect 58 0 59 0;
+#X connect 58 0 72 0;
 #X connect 59 0 56 1;
 #X connect 59 0 67 2;
 #X connect 60 0 54 0;
 #X connect 60 0 56 1;
-#X connect 60 0 67 1;
+#X connect 60 0 71 0;
+#X connect 60 0 73 0;
 #X connect 61 0 63 0;
 #X connect 63 0 5 0;
 #X connect 64 0 66 0;
 #X connect 66 0 68 0;
 #X connect 68 0 67 1;
+#X connect 68 0 71 0;
 #X connect 68 1 67 10;
+#X connect 70 0 67 9;
+#X connect 71 0 70 0;
+#X connect 72 0 71 0;
+#X connect 73 0 67 0;

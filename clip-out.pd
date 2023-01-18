@@ -1,4 +1,4 @@
-#N canvas 588 526 1065 246 10;
+#N canvas 89 124 1065 246 10;
 #X obj 232 25 inlet;
 #X obj 325 25 inlet;
 #X obj 484 25 inlet;
@@ -18,7 +18,7 @@
 #X text 538 5 l-que-play;
 #X obj 790 27 inlet;
 #X text 791 7 1-8;
-#X floatatom 790 66 5 0 0 0 - - -, f 5;
+#X floatatom 790 108 5 0 0 0 - - -, f 5;
 #X obj 769 41 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 44 25 inlet;
@@ -55,6 +55,7 @@
 -1;
 #X msg 851 52 0;
 #X obj 290 204 noteout 1;
+#X obj 769 61 delay 50;
 #X connect 0 0 20 0;
 #X connect 0 0 24 0;
 #X connect 1 0 20 0;
@@ -73,7 +74,7 @@
 #X connect 15 0 26 0;
 #X connect 17 0 19 0;
 #X connect 19 0 44 0;
-#X connect 20 0 19 0;
+#X connect 20 0 45 0;
 #X connect 21 0 20 0;
 #X connect 21 0 22 0;
 #X connect 22 0 31 0;
@@ -98,3 +99,4 @@
 #X connect 42 0 20 0;
 #X connect 43 0 42 0;
 #X connect 43 0 44 1;
+#X connect 45 0 19 0;
