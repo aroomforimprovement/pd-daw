@@ -1,13 +1,13 @@
 #N canvas 87 299 766 449 10;
 #X obj 56 61 inlet;
-#X obj 56 82 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 56 82 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X text 54 43 bank on;
 #X text 125 45 footswitch;
 #X obj 124 64 footswitch, f 26;
 #X obj 166 96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 193 96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 193 96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 221 96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -25,7 +25,7 @@
 1;
 #X floatatom 66 394 5 0 0 0 - - -, f 5;
 #X floatatom 191 391 5 0 0 0 - - -, f 5;
-#X obj 363 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 363 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X text 383 67 bank-on;
 #X obj 51 294 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -34,10 +34,6 @@
 -1 -1;
 #X obj 252 300 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 290 156 g-loop loop0101 4;
-#X obj 408 156 g-loop loop0102 5;
-#X obj 519 156 g-loop loop0103 6;
-#X obj 634 155 g-loop loop0104 7;
 #X floatatom 251 392 5 0 0 0 - - -, f 5;
 #X floatatom 303 393 5 0 0 0 - - -, f 5;
 #X obj 381 306 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -93,7 +89,7 @@
 #X restore 154 344 pd drums0202;
 #X obj 146 370 drums 1 d0202;
 #X msg 252 320 d0203;
-#N canvas 1303 413 450 494 drums0203 1;
+#N canvas 1303 413 450 494 drums0203 0;
 #X obj 82 100 inlet;
 #X text 82 83 name;
 #X obj 82 121 symbol;
@@ -118,7 +114,7 @@
 #X restore 252 345 pd drums0203;
 #X obj 251 371 drums 2 d0203;
 #X msg 381 326 d0204;
-#N canvas 1621 340 286 428 drumburst0204 1;
+#N canvas 1621 340 286 428 drumburst0204 0;
 #X obj 65 43 inlet;
 #X text 65 26 name;
 #X obj 65 64 symbol;
@@ -132,6 +128,10 @@
 #X connect 3 0 4 0;
 #X restore 379 349 pd drumburst0204;
 #X obj 380 373 drum-burst 3 d0204;
+#X obj 290 156 g-loop loop0201 4;
+#X obj 408 156 g-loop loop0202 5;
+#X obj 519 156 g-loop loop0203 6;
+#X obj 634 155 g-loop loop0204 7;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 4 0 13 0;
@@ -143,37 +143,37 @@
 #X connect 4 6 9 0;
 #X connect 4 7 10 0;
 #X connect 4 8 17 0;
-#X connect 5 0 37 0;
-#X connect 6 0 40 0;
-#X connect 7 0 22 0;
-#X connect 8 0 23 0;
-#X connect 9 0 24 0;
-#X connect 10 0 25 0;
-#X connect 13 0 31 0;
-#X connect 14 0 34 0;
+#X connect 5 0 33 0;
+#X connect 6 0 36 0;
+#X connect 7 0 37 0;
+#X connect 8 0 38 0;
+#X connect 9 0 39 0;
+#X connect 10 0 40 0;
+#X connect 13 0 27 0;
+#X connect 14 0 30 0;
 #X connect 17 0 19 0;
 #X connect 17 0 20 0;
 #X connect 17 0 21 0;
-#X connect 17 0 22 1;
-#X connect 17 0 23 1;
-#X connect 17 0 24 1;
-#X connect 17 0 25 1;
-#X connect 17 0 28 0;
-#X connect 17 0 31 2;
-#X connect 17 0 34 2;
-#X connect 17 0 37 2;
-#X connect 17 0 40 2;
-#X connect 19 0 30 0;
-#X connect 20 0 32 0;
-#X connect 21 0 35 0;
-#X connect 28 0 38 0;
-#X connect 30 0 29 0;
-#X connect 31 0 11 0;
-#X connect 31 1 15 0;
-#X connect 32 0 33 0;
-#X connect 34 0 12 0;
-#X connect 34 1 16 0;
-#X connect 35 0 36 0;
-#X connect 37 0 26 0;
-#X connect 37 1 27 0;
-#X connect 38 0 39 0;
+#X connect 17 0 24 0;
+#X connect 17 0 27 2;
+#X connect 17 0 30 2;
+#X connect 17 0 33 2;
+#X connect 17 0 36 2;
+#X connect 17 0 37 1;
+#X connect 17 0 38 1;
+#X connect 17 0 39 1;
+#X connect 17 0 40 1;
+#X connect 19 0 26 0;
+#X connect 20 0 28 0;
+#X connect 21 0 31 0;
+#X connect 24 0 34 0;
+#X connect 26 0 25 0;
+#X connect 27 0 11 0;
+#X connect 27 1 15 0;
+#X connect 28 0 29 0;
+#X connect 30 0 12 0;
+#X connect 30 1 16 0;
+#X connect 31 0 32 0;
+#X connect 33 0 22 0;
+#X connect 33 1 23 0;
+#X connect 34 0 35 0;
