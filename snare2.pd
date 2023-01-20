@@ -25,9 +25,9 @@
 #X text 317 527 efficient snare drum;
 #X obj 215 113 sel 1;
 #X obj 135 167 del 5;
-#X msg 135 192 100;
-#X msg 181 192 90;
-#X msg 237 196 8;
+#X msg 237 196 4;
+#X msg 181 192 60;
+#X msg 135 192 60;
 #X connect 0 0 4 0;
 #X connect 0 0 13 0;
 #X connect 0 0 13 1;
@@ -42,7 +42,7 @@
 #X connect 8 0 6 0;
 #X connect 9 0 6 0;
 #X connect 10 0 25 0;
-#X connect 10 1 28 0;
+#X connect 10 1 26 0;
 #X connect 10 2 9 0;
 #X connect 11 0 24 0;
 #X connect 13 0 19 0;
@@ -56,8 +56,8 @@
 #X connect 21 0 4 1;
 #X connect 22 0 0 0;
 #X connect 24 0 10 0;
-#X connect 25 0 26 0;
+#X connect 25 0 28 0;
 #X connect 25 0 27 0;
-#X connect 26 0 3 0;
+#X connect 26 0 21 1;
 #X connect 27 0 3 0;
-#X connect 28 0 21 1;
+#X connect 28 0 3 0;
