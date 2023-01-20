@@ -2,7 +2,7 @@
 #X msg 359 54 \; pd dsp 1;
 #X msg 427 53 \; pd dsp 0;
 #X obj 89 78 bank-selector, f 34;
-#X obj 115 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 115 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 89 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -45,11 +45,12 @@
 #X obj 507 18 loadbang;
 #X msg 507 39 0;
 #X obj 579 64 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 5900 1;
+-1 -1 7000 1;
 #X obj 579 18 loadbang;
 #X msg 579 39 0;
 #X obj 507 223 s input-volume;
 #X obj 579 200 s output-volume;
+#X obj 188 143 bank04;
 #X connect 2 0 4 0;
 #X connect 2 1 3 0;
 #X connect 2 2 6 0;
@@ -60,6 +61,7 @@
 #X connect 2 7 9 0;
 #X connect 3 0 15 0;
 #X connect 4 0 11 0;
+#X connect 5 0 26 0;
 #X connect 6 0 17 0;
 #X connect 14 0 0 0;
 #X connect 14 1 1 0;
