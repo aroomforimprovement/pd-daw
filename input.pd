@@ -2,7 +2,7 @@
 #X obj 234 175 outlet~;
 #X obj 111 90 adc~;
 #X obj 131 133 pitch-down;
-#N canvas 1431 0 480 325 input-vol 0;
+#N canvas 1431 0 480 325 input-vol 1;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
 #X floatatom 169 75 5 0 0 0 - - -, f 5;
 #X floatatom 206 69 5 0 0 0 - - -, f 5;
@@ -15,7 +15,6 @@
 #X obj 169 137 delay 100;
 #X msg 169 158 0;
 #X obj 94 177 outlet;
-#X obj 13 104 r input-volume;
 #X connect 0 0 5 0;
 #X connect 1 0 4 0;
 #X connect 3 0 0 0;
@@ -29,7 +28,6 @@
 #X connect 8 0 9 0;
 #X connect 9 0 10 0;
 #X connect 10 0 6 1;
-#X connect 12 0 7 0;
 #X restore 272 80 pd input-vol;
 #X msg 289 39 0 100;
 #X obj 217 13 loadbang;

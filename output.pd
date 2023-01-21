@@ -14,7 +14,6 @@
 #X msg 169 158 0;
 #X obj 94 177 outlet;
 #X obj 169 95 sel 56;
-#X obj 25 84 r output-volume;
 #X connect 0 0 4 0;
 #X connect 1 0 11 0;
 #X connect 3 0 0 0;
@@ -28,13 +27,12 @@
 #X connect 8 0 9 0;
 #X connect 9 0 5 1;
 #X connect 11 0 7 0;
-#X connect 12 0 6 0;
 #X restore 195 80 pd output-vol;
 #X obj 72 97 dac~;
 #X obj 124 30 loadbang;
 #X msg 124 51 0;
 #X obj 294 34 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 7100 1;
+-1 -1 10033 1;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 1 0 3 1;
