@@ -1,7 +1,7 @@
-#N canvas 949 656 450 300 10;
+#N canvas 663 241 450 300 10;
 #X obj 70 29 inlet~;
 #X obj 72 76 *~;
-#N canvas 1429 656 450 300 output-vol 1;
+#N canvas 1429 656 450 300 output-vol 0;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
 #X floatatom 169 75 5 0 0 0 - - -, f 5;
 #X floatatom 206 69 5 0 0 0 - - -, f 5;
@@ -31,12 +31,9 @@
 #X obj 72 97 dac~;
 #X obj 124 30 loadbang;
 #X msg 124 51 0;
-#X obj 294 34 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 10033 1;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 1 0 3 1;
 #X connect 2 0 1 1;
-#X connect 2 0 6 0;
 #X connect 4 0 5 0;
 #X connect 5 0 1 1;
