@@ -1,4 +1,4 @@
-#N canvas 595 172 682 392 10;
+#N canvas 47 532 682 392 10;
 #X msg 359 54 \; pd dsp 1;
 #X msg 427 53 \; pd dsp 0;
 #X obj 89 78 bank-selector, f 34;
@@ -8,7 +8,7 @@
 1;
 #X obj 170 107 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 144 107 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 144 107 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 226 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;

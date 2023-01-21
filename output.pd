@@ -1,4 +1,4 @@
-#N canvas 663 241 450 300 10;
+#N canvas 209 605 450 300 10;
 #X obj 70 29 inlet~;
 #X obj 72 76 *~;
 #N canvas 1429 656 450 300 output-vol 0;

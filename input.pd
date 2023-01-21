@@ -1,8 +1,8 @@
-#N canvas 1341 568 450 300 10;
+#N canvas 86 622 450 300 10;
 #X obj 234 175 outlet~;
 #X obj 111 90 adc~;
 #X obj 131 133 pitch-down;
-#N canvas 1431 0 480 325 input-vol 1;
+#N canvas 1431 0 480 325 input-vol 0;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
 #X floatatom 169 75 5 0 0 0 - - -, f 5;
 #X floatatom 206 69 5 0 0 0 - - -, f 5;
