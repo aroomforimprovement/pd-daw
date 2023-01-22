@@ -1,14 +1,14 @@
-#N canvas 47 532 682 392 10;
+#N canvas 47 532 682 292 10;
 #X msg 359 54 \; pd dsp 1;
 #X msg 427 53 \; pd dsp 0;
 #X obj 89 78 bank-selector, f 34;
 #X obj 115 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 89 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 89 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 170 107 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 144 107 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 144 107 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 226 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -19,7 +19,7 @@
 #X obj 255 107 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 41 140 bank01;
-#X obj 157 192 bpm, f 14;
+#X obj 359 99 bpm, f 14;
 #X obj 360 206 output;
 #N canvas 0 50 450 300 on-off 0;
 #X obj 46 18 notein;
@@ -40,6 +40,42 @@
 #X obj 90 141 bank02;
 #X obj 359 172 input;
 #X obj 139 142 bank03;
+#N canvas -4 51 803 423 loops 0;
+#X obj 182 191 g-loop loop0101 4;
+#X obj 300 191 g-loop loop0102 5;
+#X obj 411 191 g-loop loop0103 6;
+#X obj 526 191 g-loop loop0104 7;
+#X obj 212 92 footswitch, f 66;
+#X obj 193 140 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 304 140 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 416 140 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 532 140 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 212 44 loadbang;
+#X msg 212 65 1;
+#X obj 635 119 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X text 212 23 bank-on (can be removed);
+#X text 630 91 bank-on (can be removed);
+#X connect 4 4 5 0;
+#X connect 4 5 6 0;
+#X connect 4 6 7 0;
+#X connect 4 7 8 0;
+#X connect 4 8 11 0;
+#X connect 5 0 0 0;
+#X connect 6 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 3 0;
+#X connect 9 0 10 0;
+#X connect 10 0 4 0;
+#X connect 11 0 0 1;
+#X connect 11 0 1 1;
+#X connect 11 0 2 1;
+#X connect 11 0 3 1;
+#X restore 360 130 pd loops;
 #X connect 2 0 4 0;
 #X connect 2 1 3 0;
 #X connect 2 2 6 0;
