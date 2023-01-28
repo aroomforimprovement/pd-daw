@@ -1,4 +1,4 @@
-#N canvas 1149 36 757 454 10;
+#N canvas 1155 0 757 454 10;
 #X obj 619 419 table \$1 1.152e+006;
 #X text 119 14 footswitch;
 #N canvas 847 337 379 337 doubletap 0;
@@ -346,19 +346,19 @@
 #X obj 130 416 spigot;
 #X floatatom 159 442 5 0 0 0 - - -, f 5;
 #X obj 130 441 +;
-#X obj 289 337 spigot;
-#X obj 289 358 +;
+#X obj 310 367 spigot;
+#X obj 310 388 +;
 #X floatatom 707 446 5 0 0 0 - - -, f 5;
-#X msg 315 302 1;
-#X msg 284 290 0;
-#X msg 242 383 1;
-#X msg 160 365 0;
+#X msg 336 332 1;
+#X msg 305 320 0;
+#X msg 241 405 1;
+#X msg 163 381 0;
 #X obj 707 496 sel 0;
 #X msg 453 321 0;
 #X obj 707 466 spigot;
-#X obj 262 269 r \$1rec;
-#X obj 320 279 r \$1clear;
-#X obj 206 243 r \$1stop-rec;
+#X obj 202 381 r \$1rec;
+#X obj 341 309 r \$1clear;
+#X obj 163 360 r \$1stop-rec;
 #X obj 7 246 s \$1play-active;
 #X obj 821 323 r \$1play-active;
 #X obj 333 167 output;
@@ -370,7 +370,7 @@
 #X obj 443 164 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 383 41 0;
-#X msg 202 381 0;
+#X msg 201 403 0;
 #X obj 168 23 r \$1switch;
 #X obj 169 69 spigot;
 #X msg 169 90 0;
