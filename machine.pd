@@ -1,15 +1,15 @@
-#N canvas 76 23 1918 944 10;
+#N canvas -10 0 1918 944 10;
 #X obj 642 763 efficient-kick;
 #X msg 642 735 1;
 #X obj 749 763 efficient-snare;
 #X obj 953 763 efficient-fmhh;
 #X obj 314 225 hradio 30 1 0 16 empty empty empty 0 -8 0 10 -262144
--1 -1 9;
+-1 -1 4;
 #X msg 716 735 1;
 #X obj 836 228 hradio 30 1 0 16 empty empty empty 0 -8 0 10 -262144
--1 -1 3;
+-1 -1 8;
 #X obj 1361 227 hradio 30 1 0 16 empty empty empty 0 -8 0 10 -262144
--1 -1 6;
+-1 -1 1;
 #X obj 1163 658 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 908 763 tom;
@@ -227,14 +227,14 @@
 #X obj 422 89 r bpm1;
 #X obj 832 96 r bpm2;
 #X obj 1360 105 r bpm4;
-#X obj 631 156 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 631 156 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 422 132 spigot;
 #X obj 832 137 spigot;
 #X obj 1360 140 spigot;
 #X msg 631 179 0;
 #X obj 631 97 spigot;
-#X obj -141 68 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj -141 68 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 631 118 sel 0;
 #X msg 631 76 1;
@@ -272,7 +272,7 @@
 -1;
 #X floatatom -24 70 5 0 0 0 - - -, f 5;
 #X floatatom 2412 445 5 0 0 0 - - -, f 5;
-#X obj 819 868 output;
+#X obj 817 893 output;
 #X obj -55 112 delay 50;
 #X msg 755 735 2;
 #X msg 795 735 3;
@@ -391,6 +391,48 @@
 #X connect 9 0 5 1;
 #X connect 11 0 7 0;
 #X restore 1249 630 pd decay;
+#X obj 819 838 *~ 1;
+#N canvas 1462 0 450 300 reverb 1;
+#X obj 138 153 rev1~, f 19;
+#X obj 138 111 inlet~;
+#X obj 139 183 outlet~;
+#X obj 321 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 343 92 vsl 15 128 0 0.3 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#N canvas 0 50 450 300 reverb-vol 1;
+#X floatatom 132 63 5 0 0 0 - - -, f 5;
+#X floatatom 169 75 5 0 0 0 - - -, f 5;
+#X floatatom 206 69 5 0 0 0 - - -, f 5;
+#X obj 163 31 ctlin;
+#X obj 132 83 / 100;
+#X obj 94 136 spigot;
+#X floatatom 94 157 5 0 0 0 - - -, f 5;
+#X msg 169 130 1;
+#X obj 169 151 delay 100;
+#X msg 169 172 0;
+#X obj 94 177 outlet;
+#X obj 169 95 sel 48;
+#X connect 0 0 4 0;
+#X connect 1 0 11 0;
+#X connect 3 0 0 0;
+#X connect 3 1 1 0;
+#X connect 3 2 2 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 7 0 5 1;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 5 1;
+#X connect 11 0 7 0;
+#X restore 227 79 pd reverb-vol;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 3 0 0 2;
+#X connect 4 0 0 1;
+#X connect 5 0 4 0;
+#X restore 916 865 pd reverb;
 #X connect 0 0 264 0;
 #X connect 1 0 0 0;
 #X connect 2 0 266 0;
@@ -765,7 +807,10 @@
 #X connect 261 0 264 1;
 #X connect 262 0 266 1;
 #X connect 263 0 265 1;
-#X connect 264 0 254 0;
-#X connect 265 0 254 0;
-#X connect 266 0 254 0;
+#X connect 264 0 268 0;
+#X connect 265 0 268 0;
+#X connect 266 0 268 0;
 #X connect 267 0 8 0;
+#X connect 268 0 269 0;
+#X connect 268 0 254 0;
+#X connect 269 0 254 0;
