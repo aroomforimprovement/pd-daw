@@ -1,10 +1,10 @@
-#N canvas 527 138 682 292 10;
+#N canvas 527 138 850 313 10;
 #X msg 514 60 \; pd dsp 1;
 #X msg 583 54 \; pd dsp 0;
 #X obj 89 78 bank-selector, f 34;
 #X obj 93 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 42 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 42 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 197 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -20,7 +20,7 @@
 1;
 #X obj 42 140 bank01;
 #X obj 514 105 bpm, f 14;
-#X obj 514 207 output;
+#X obj 514 240 output;
 #N canvas 0 50 450 300 on-off 0;
 #X obj 46 18 notein;
 #X floatatom 46 39 5 0 0 0 - - -, f 5;
@@ -193,6 +193,7 @@
 -1 -1 0 1;
 #X obj 451 27 loadbang;
 #X msg 451 48 0;
+#X obj 514 197 s~ guitar;
 #X connect 2 0 4 0;
 #X connect 2 1 3 0;
 #X connect 2 2 6 0;
@@ -207,7 +208,7 @@
 #X connect 6 0 17 0;
 #X connect 14 0 0 0;
 #X connect 14 1 1 0;
-#X connect 16 0 13 0;
+#X connect 16 0 23 0;
 #X connect 20 0 16 0;
 #X connect 21 0 22 0;
 #X connect 22 0 20 0;

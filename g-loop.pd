@@ -160,7 +160,7 @@
 #X connect 9 0 4 0;
 #X restore 134 82 pd increment;
 #X obj 179 32 r \$1clear;
-#N canvas 1046 557 865 433 record 0;
+#N canvas 1046 557 865 433 record 1;
 #X obj 170 32 inlet;
 #X obj 123 84 spigot;
 #X msg 170 60 1;
@@ -225,11 +225,11 @@
 1;
 #X obj 456 259 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 646 291 output;
 #X obj 646 195 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 584 63 sel 1;
 #X msg 584 84 0;
+#X obj 646 291 s~ loops;
 #X connect 0 0 2 0;
 #X connect 1 0 3 0;
 #X connect 2 0 1 1;
@@ -254,7 +254,7 @@
 #X connect 18 0 6 0;
 #X connect 20 0 21 0;
 #X connect 21 0 22 1;
-#X connect 21 0 57 0;
+#X connect 21 0 56 0;
 #X connect 22 0 30 0;
 #X connect 23 0 40 0;
 #X connect 23 1 24 0;
@@ -269,7 +269,7 @@
 #X connect 30 0 26 0;
 #X connect 30 0 43 0;
 #X connect 31 0 42 0;
-#X connect 31 0 56 0;
+#X connect 31 0 55 0;
 #X connect 32 0 33 0;
 #X connect 33 0 42 1;
 #X connect 34 0 37 0;
@@ -287,7 +287,7 @@
 #X connect 39 0 34 0;
 #X connect 39 0 53 0;
 #X connect 40 0 41 1;
-#X connect 40 0 55 0;
+#X connect 40 0 58 0;
 #X connect 41 0 38 0;
 #X connect 42 0 23 0;
 #X connect 45 0 33 0;
@@ -299,9 +299,9 @@
 #X connect 52 0 34 0;
 #X connect 53 0 52 1;
 #X connect 54 0 53 0;
-#X connect 57 0 58 0;
-#X connect 58 0 34 0;
-#X connect 58 0 53 0;
+#X connect 56 0 57 0;
+#X connect 57 0 34 0;
+#X connect 57 0 53 0;
 #X restore 147 133 pd record;
 #X obj 157 111 s \$1que-rec;
 #X obj 248 135 s \$1que-play;
@@ -361,7 +361,6 @@
 #X obj 163 360 r \$1stop-rec;
 #X obj 7 246 s \$1play-active;
 #X obj 821 323 r \$1play-active;
-#X obj 333 167 output;
 #X obj 508 242 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 422 25 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -377,6 +376,7 @@
 #X obj 168 44 delay 500;
 #X obj 587 26 inlet;
 #X text 586 4 track vol;
+#X obj 333 167 s~ loops;
 #X connect 0 0 1 0;
 #X connect 0 0 21 0;
 #X connect 0 0 35 0;
@@ -386,11 +386,11 @@
 #X connect 3 0 4 0;
 #X connect 4 0 6 0;
 #X connect 4 0 51 0;
-#X connect 4 0 61 1;
-#X connect 6 0 58 0;
+#X connect 4 0 60 1;
+#X connect 6 0 57 0;
 #X connect 6 0 16 0;
 #X connect 6 0 41 0;
-#X connect 6 0 55 0;
+#X connect 6 0 54 0;
 #X connect 6 1 7 0;
 #X connect 7 0 12 0;
 #X connect 7 0 20 0;
@@ -400,8 +400,8 @@
 #X connect 11 0 29 0;
 #X connect 12 0 13 0;
 #X connect 12 1 30 0;
-#X connect 12 1 57 0;
-#X connect 13 0 53 0;
+#X connect 12 1 56 0;
+#X connect 13 0 65 0;
 #X connect 15 0 4 0;
 #X connect 15 0 1 1;
 #X connect 15 0 21 1;
@@ -428,24 +428,24 @@
 #X connect 35 0 37 0;
 #X connect 36 0 37 1;
 #X connect 36 0 45 1;
-#X connect 36 0 56 1;
+#X connect 36 0 55 1;
 #X connect 37 0 36 0;
 #X connect 38 0 39 0;
 #X connect 39 0 40 0;
 #X connect 40 0 39 1;
 #X connect 40 0 47 0;
-#X connect 40 0 56 0;
+#X connect 40 0 55 0;
 #X connect 41 0 38 1;
 #X connect 42 0 38 1;
 #X connect 43 0 35 1;
 #X connect 44 0 35 1;
 #X connect 45 0 46 0;
 #X connect 46 0 9 0;
-#X connect 46 0 54 0;
+#X connect 46 0 53 0;
 #X connect 46 0 40 0;
 #X connect 47 0 45 0;
 #X connect 48 0 43 0;
-#X connect 48 0 59 0;
+#X connect 48 0 58 0;
 #X connect 49 0 42 0;
 #X connect 49 0 40 0;
 #X connect 49 0 36 0;
@@ -453,17 +453,17 @@
 #X connect 52 0 32 1;
 #X connect 52 0 31 1;
 #X connect 52 0 47 1;
+#X connect 53 0 29 0;
 #X connect 54 0 29 0;
-#X connect 55 0 29 0;
-#X connect 56 0 31 0;
-#X connect 58 0 9 0;
-#X connect 58 0 40 0;
-#X connect 59 0 36 0;
-#X connect 60 0 63 0;
-#X connect 61 0 62 0;
-#X connect 62 0 18 0;
-#X connect 63 0 61 0;
-#X connect 64 0 13 1;
+#X connect 55 0 31 0;
+#X connect 57 0 9 0;
+#X connect 57 0 40 0;
+#X connect 58 0 36 0;
+#X connect 59 0 62 0;
+#X connect 60 0 61 0;
+#X connect 61 0 18 0;
+#X connect 62 0 60 0;
+#X connect 63 0 13 1;
 #X restore 353 108 pd play-loop;
 #X obj 463 26 inlet;
 #X text 461 9 bank-on;
