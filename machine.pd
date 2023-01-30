@@ -227,14 +227,14 @@
 #X obj 422 89 r bpm1;
 #X obj 832 96 r bpm2;
 #X obj 1360 105 r bpm4;
-#X obj 631 156 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 631 156 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 422 132 spigot;
 #X obj 832 137 spigot;
 #X obj 1360 140 spigot;
 #X msg 631 179 0;
 #X obj 631 97 spigot;
-#X obj -141 68 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj -141 68 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 631 118 sel 0;
 #X msg 631 76 1;
@@ -262,7 +262,7 @@
 #X floatatom 576 180 5 0 0 0 - - -, f 5;
 #X obj 2412 424 inlet;
 #X text 2413 405 bank-on;
-#X obj -24 50 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj -24 50 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X text -36 30 bank-on;
 #X obj -24 94 sel 1;
@@ -389,7 +389,7 @@
 #X connect 11 0 7 0;
 #X restore 1249 630 pd decay;
 #X obj 819 838 *~ 1;
-#X obj 820 871 s~ drums;
+#X obj 820 871 s~ drum-aud;
 #X connect 0 0 262 0;
 #X connect 1 0 0 0;
 #X connect 2 0 264 0;

@@ -229,7 +229,7 @@
 -1 -1;
 #X obj 584 63 sel 1;
 #X msg 584 84 0;
-#X obj 646 291 s~ loops;
+#X obj 646 291 s~ \$0-loops;
 #X connect 0 0 2 0;
 #X connect 1 0 3 0;
 #X connect 2 0 1 1;
@@ -376,7 +376,7 @@
 #X obj 168 44 delay 500;
 #X obj 587 26 inlet;
 #X text 586 4 track vol;
-#X obj 333 167 s~ loops;
+#X obj 333 167 s~ loop-aud;
 #X connect 0 0 1 0;
 #X connect 0 0 21 0;
 #X connect 0 0 35 0;
