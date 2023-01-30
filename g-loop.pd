@@ -305,7 +305,7 @@
 #X restore 147 133 pd record;
 #X obj 157 111 s \$1que-rec;
 #X obj 248 135 s \$1que-play;
-#N canvas -9 421 1052 569 play-loop 1;
+#N canvas -9 421 1052 569 play-loop 0;
 #X obj 100 17 r bpm4;
 #X obj 103 162 spigot;
 #X text 234 4 from que-play;
@@ -477,9 +477,9 @@
 #X obj 19 137 s \$1d-tap;
 #X obj 324 33 inlet;
 #X text 317 14 track-vol;
-#X obj 146 216 r loop-rec-\$1;
-#X obj 258 217 r loop-play-\$1;
-#X obj 197 271 s loop-aud-\$2;
+#X obj 197 271 s~ \$1-aud;
+#X obj 146 216 r~ loop-rec-\$1;
+#X obj 258 217 r~ loop-play-\$1;
 #X connect 2 0 21 0;
 #X connect 3 0 4 0;
 #X connect 6 1 8 0;
@@ -497,5 +497,5 @@
 #X connect 19 0 6 0;
 #X connect 19 0 20 0;
 #X connect 22 0 11 0;
-#X connect 24 0 26 0;
-#X connect 25 0 26 0;
+#X connect 25 0 24 0;
+#X connect 26 0 24 0;

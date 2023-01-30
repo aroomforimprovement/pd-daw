@@ -4,7 +4,7 @@
 #X obj 89 78 bank-selector, f 34;
 #X obj 93 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 42 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 42 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 197 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -389,10 +389,10 @@
 #X obj 394 121 r snares;
 #X obj 508 123 r snares;
 #X obj 599 120 r hats;
-#X obj 39 73 r~ loop-aud-4;
-#X obj 39 97 r~ loop-aud-5;
-#X obj 39 118 r~ loop-aud-6;
-#X obj 39 142 r~ loop-aud-7;
+#X obj 39 73 r~ loop0101-aud;
+#X obj 39 97 r~ loop0102-aud;
+#X obj 39 118 r~ loop0103-aud;
+#X obj 39 142 r~ loop0104-aud;
 #X connect 0 0 2 0;
 #X connect 0 0 2 1;
 #X connect 1 0 0 1;
