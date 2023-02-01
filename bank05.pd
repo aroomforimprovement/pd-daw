@@ -1,0 +1,152 @@
+#N canvas 20 483 553 324 10;
+#X obj 56 61 inlet;
+#X obj 56 82 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X text 54 43 bank on;
+#X text 125 45 footswitch;
+#X obj 124 64 footswitch, f 26;
+#X obj 218 103 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 318 100 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X floatatom 25 253 5 0 0 0 - - -, f 5;
+#X floatatom 150 249 5 0 0 0 - - -, f 5;
+#X obj 37 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 129 108 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 70 252 5 0 0 0 - - -, f 5;
+#X floatatom 195 249 5 0 0 0 - - -, f 5;
+#X obj 363 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 383 67 bank-on;
+#X obj 55 152 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 157 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 256 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 255 250 5 0 0 0 - - -, f 5;
+#X floatatom 307 251 5 0 0 0 - - -, f 5;
+#X obj 385 164 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 56 175 d0501;
+#N canvas 858 332 752 542 drums0501 1;
+#X obj 82 100 inlet;
+#X text 82 83 name;
+#X obj 82 121 symbol;
+#X obj 82 142 pack s;
+#X msg 227 254 \; \$1d401 9 \; \$1d402 0 \; \$1d403 0 \; \$1d404 0
+\; \$1d405 9 \; \$1d406 0 \; \$1d407 0 \; \$1d408 0 \; \$1d409 9 \;
+\$1d410 0 \; \$1d411 0 \; \$1d412 0 \; \$1d413 0 \; \$1d414 0 \; \$1d415
+0 \; \$1d416 0 \;;
+#X msg 128 254 \; \$1d201 0 \; \$1d202 0 \; \$1d203 0 \; \$1d204 0
+\; \$1d205 0 \; \$1d206 0 \; \$1d207 4 \; \$1d208 0 \; \$1d209 0 \;
+\$1d210 0 \; \$1d211 0 \; \$1d212 0 \; \$1d213 0 \; \$1d214 0 \; \$1d215
+0 \; \$1d216 0 \;;
+#X msg 22 255 \; \$1d101 1 \; \$1d102 1 \; \$1d103 1 \; \$1d104 0 \;
+\$1d105 1 \; \$1d106 1 \; \$1d107 1 \; \$1d108 0 \; \$1d109 1 \; \$1d110
+1 \; \$1d111 1 \; \$1d112 1 \; \$1d113 1 \; \$1d114 1 \; \$1d115 0
+\; \$1d116 0 \;;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 6 0;
+#X connect 3 0 5 0;
+#X restore 56 203 pd drums0501;
+#X obj 25 227 drums 0 d0501, f 17;
+#X msg 158 174 d0502;
+#N canvas 676 288 752 542 drums0502 1;
+#X obj 82 100 inlet;
+#X text 82 83 name;
+#X obj 82 121 symbol;
+#X obj 82 142 pack s;
+#X msg 22 255 \; \$1d101 0 \; \$1d102 0 \; \$1d103 0 \; \$1d104 0 \;
+\$1d105 0 \; \$1d106 0 \; \$1d107 0 \; \$1d108 0 \; \$1d109 0 \; \$1d110
+0 \; \$1d111 0 \; \$1d112 0 \; \$1d113 0 \; \$1d114 0 \; \$1d115 0
+\; \$1d116 0 \;;
+#X msg 227 254 \; \$1d401 0 \; \$1d402 0 \; \$1d403 0 \; \$1d404 0
+\; \$1d405 0 \; \$1d406 0 \; \$1d407 0 \; \$1d408 0 \; \$1d409 0 \;
+\$1d410 0 \; \$1d411 0 \; \$1d412 0 \; \$1d413 0 \; \$1d414 0 \; \$1d415
+0 \; \$1d416 0 \;;
+#X msg 128 254 \; \$1d201 0 \; \$1d202 3 \; \$1d203 0 \; \$1d204 3
+\; \$1d205 0 \; \$1d206 0 \; \$1d207 0 \; \$1d208 0 \; \$1d209 0 \;
+\$1d210 0 \; \$1d211 0 \; \$1d212 0 \; \$1d213 0 \; \$1d214 0 \; \$1d215
+11 \; \$1d216 0 \;;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 6 0;
+#X connect 3 0 5 0;
+#X restore 158 202 pd drums0502;
+#X obj 150 228 drums 1 d0502;
+#X msg 256 178 d0503;
+#N canvas 834 411 450 494 drums0503 1;
+#X obj 82 100 inlet;
+#X text 82 83 name;
+#X obj 82 121 symbol;
+#X obj 82 142 pack s;
+#X msg 22 255 \; \$1d101 6 \; \$1d102 6 \; \$1d103 6 \; \$1d104 6 \;
+\$1d105 6 \; \$1d106 5 \; \$1d107 6 \; \$1d108 0 \; \$1d109 5 \; \$1d110
+0 \; \$1d111 0 \; \$1d112 0 \; \$1d113 5 \; \$1d114 0 \; \$1d115 8
+\; \$1d116 9 \;;
+#X msg 128 254 \; \$1d201 0 \; \$1d202 0 \; \$1d203 0 \; \$1d204 4
+\; \$1d205 0 \; \$1d206 0 \; \$1d207 4 \; \$1d208 0 \; \$1d209 0 \;
+\$1d210 4 \; \$1d211 0 \; \$1d212 8 \; \$1d213 8 \; \$1d214 9 \; \$1d215
+9 \; \$1d216 0 \;;
+#X msg 227 254 \; \$1d401 0 \; \$1d402 0 \; \$1d403 0 \; \$1d404 0
+\; \$1d405 0 \; \$1d406 0 \; \$1d407 0 \; \$1d408 0 \; \$1d409 1 \;
+\$1d410 0 \; \$1d411 0 \; \$1d412 0 \; \$1d413 1 \; \$1d414 0 \; \$1d415
+0 \; \$1d416 0 \;;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 5 0;
+#X connect 3 0 6 0;
+#X restore 256 203 pd drums0503;
+#X obj 255 229 drums 2 d0503;
+#X msg 385 184 d0504;
+#N canvas 1470 420 286 428 drumburst0504 1;
+#X obj 65 43 inlet;
+#X text 65 26 name;
+#X obj 65 64 symbol;
+#X obj 65 85 pack s;
+#X msg 65 111 \; \$1d401 11 \; \$1d402 0 \; \$1d403 11 \; \$1d404 0
+\; \$1d405 11 \; \$1d406 11 \; \$1d407 4 \; \$1d408 4 \; \$1d409 4
+\; \$1d410 0 \; \$1d411 12 \; \$1d412 0 \; \$1d413 9 \; \$1d414 9 \;
+\$1d415 9 \; \$1d416 8 \;;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X restore 383 207 pd drumburst0504;
+#X obj 384 231 drum-burst 3 d0504;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 4 0 9 0;
+#X connect 4 1 10 0;
+#X connect 4 2 5 0;
+#X connect 4 3 6 0;
+#X connect 4 8 13 0;
+#X connect 5 0 29 0;
+#X connect 6 0 32 0;
+#X connect 9 0 23 0;
+#X connect 10 0 26 0;
+#X connect 13 0 15 0;
+#X connect 13 0 16 0;
+#X connect 13 0 17 0;
+#X connect 13 0 20 0;
+#X connect 13 0 32 2;
+#X connect 15 0 21 0;
+#X connect 16 0 24 0;
+#X connect 17 0 27 0;
+#X connect 20 0 30 0;
+#X connect 21 0 22 0;
+#X connect 23 0 7 0;
+#X connect 23 1 11 0;
+#X connect 24 0 25 0;
+#X connect 26 0 8 0;
+#X connect 26 1 12 0;
+#X connect 27 0 28 0;
+#X connect 29 0 18 0;
+#X connect 29 1 19 0;
+#X connect 30 0 31 0;
