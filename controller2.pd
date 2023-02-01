@@ -10,9 +10,9 @@
 1;
 #X obj 144 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 310 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 310 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 257 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 257 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 428 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -42,7 +42,7 @@
 #N canvas 32 417 747 423 loops 0;
 #X obj 73 311 g-loop loop0101 4;
 #X obj 97 111 footswitch, f 66;
-#X obj 78 159 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 78 159 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 189 159 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -193,7 +193,7 @@
 #X obj 451 27 loadbang;
 #X msg 451 48 0;
 #X obj 514 197 s~ guitar-aud;
-#N canvas 794 68 839 415 output 1;
+#N canvas 794 68 839 415 output 0;
 #X obj 51 260 *~;
 #N canvas 1429 656 450 300 output-vol 0;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
@@ -232,7 +232,7 @@
 #X obj 321 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 343 92 vsl 15 128 0 0.3 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 10583 1;
 #N canvas 0 50 450 300 reverb-vol 0;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
 #X floatatom 169 75 5 0 0 0 - - -, f 5;
@@ -424,6 +424,7 @@
 #X connect 27 0 11 0;
 #X restore 514 240 pd output;
 #X obj 259 139 bank05;
+#X obj 310 139 bank06;
 #X connect 2 0 4 0;
 #X connect 2 1 3 0;
 #X connect 2 2 6 0;
@@ -436,6 +437,7 @@
 #X connect 4 0 11 0;
 #X connect 5 0 18 0;
 #X connect 6 0 16 0;
+#X connect 7 0 25 0;
 #X connect 8 0 24 0;
 #X connect 13 0 0 0;
 #X connect 13 1 1 0;
