@@ -1,10 +1,10 @@
 #N canvas -6 0 1918 944 10;
 #X obj 314 225 hradio 30 1 0 16 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 16;
 #X obj 836 228 hradio 30 1 0 16 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 16;
 #X obj 1361 227 hradio 30 1 0 16 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 16;
 #X obj -141 47 inlet;
 #X obj 354 191 outlet;
 #X obj 312 258 select 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15, f 80
@@ -243,7 +243,7 @@
 -1 -1;
 #X obj -44 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom 576 180 5 0 0 0 - - -, f 5;
+#X floatatom 574 179 5 0 0 0 - - -, f 5;
 #X obj 2412 424 inlet;
 #X text 2413 405 bank-on;
 #X obj -24 50 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0

@@ -4,13 +4,13 @@
 #X obj 89 78 bank-selector, f 34;
 #X obj 93 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 42 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 42 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 197 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 144 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 310 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 310 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 257 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -193,9 +193,9 @@
 #X obj 451 27 loadbang;
 #X msg 451 48 0;
 #X obj 514 197 s~ guitar-aud;
-#N canvas 794 68 839 415 output 0;
+#N canvas 794 68 839 415 output 1;
 #X obj 51 260 *~;
-#N canvas 1429 656 450 300 output-vol 0;
+#N canvas 1429 656 450 300 output-vol 1;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
 #X floatatom 169 75 5 0 0 0 - - -, f 5;
 #X floatatom 206 69 5 0 0 0 - - -, f 5;
@@ -208,6 +208,8 @@
 #X msg 169 158 0;
 #X obj 94 177 outlet;
 #X obj 169 95 sel 56;
+#X obj 275 98 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 12700 1;
 #X connect 0 0 4 0;
 #X connect 1 0 11 0;
 #X connect 3 0 0 0;
@@ -221,6 +223,7 @@
 #X connect 8 0 9 0;
 #X connect 9 0 5 1;
 #X connect 11 0 7 0;
+#X connect 12 0 6 0;
 #X restore 185 191 pd output-vol;
 #X obj 51 281 dac~;
 #X obj 183 138 loadbang;
@@ -232,7 +235,7 @@
 #X obj 321 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 343 92 vsl 15 128 0 0.3 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 10583 1;
+-1 -1 0 1;
 #N canvas 0 50 450 300 reverb-vol 0;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
 #X floatatom 169 75 5 0 0 0 - - -, f 5;
