@@ -120,6 +120,7 @@
 #X obj 391 220 drum-burst 3 d0304;
 #X obj 32 216 drums 0 d0301, f 17;
 #X obj 262 218 drums 2 d0303;
+#X obj 453 121 loadbang;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 4 0 9 0;
@@ -131,10 +132,6 @@
 #X connect 6 0 30 0;
 #X connect 9 0 31 0;
 #X connect 10 0 25 0;
-#X connect 13 0 15 0;
-#X connect 13 0 16 0;
-#X connect 13 0 17 0;
-#X connect 13 0 20 0;
 #X connect 13 0 30 2;
 #X connect 13 0 31 1;
 #X connect 13 0 25 1;
@@ -153,3 +150,7 @@
 #X connect 31 1 11 0;
 #X connect 32 0 18 0;
 #X connect 32 1 19 0;
+#X connect 33 0 20 0;
+#X connect 33 0 17 0;
+#X connect 33 0 16 0;
+#X connect 33 0 15 0;

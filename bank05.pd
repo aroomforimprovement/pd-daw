@@ -7,11 +7,11 @@
 #X obj 124 64 footswitch, f 26;
 #X obj 218 103 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 318 100 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 318 100 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 25 253 5 0 0 0 - - -, f 5;
 #X floatatom 150 249 5 0 0 0 - - -, f 5;
-#X obj 37 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 37 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 129 108 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -31,7 +31,7 @@
 #X obj 385 164 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 56 175 d0501;
-#N canvas 858 332 752 542 drums0501 1;
+#N canvas 858 332 752 542 drums0501 0;
 #X obj 82 100 inlet;
 #X text 82 83 name;
 #X obj 82 121 symbol;
@@ -56,7 +56,7 @@
 #X restore 56 203 pd drums0501;
 #X obj 25 227 drums 0 d0501, f 17;
 #X msg 158 174 d0502;
-#N canvas 676 288 752 542 drums0502 1;
+#N canvas 676 288 752 542 drums0502 0;
 #X obj 82 100 inlet;
 #X text 82 83 name;
 #X obj 82 121 symbol;
@@ -81,7 +81,7 @@
 #X restore 158 202 pd drums0502;
 #X obj 150 228 drums 1 d0502;
 #X msg 256 178 d0503;
-#N canvas 834 411 450 494 drums0503 1;
+#N canvas 834 411 450 494 drums0503 0;
 #X obj 82 100 inlet;
 #X text 82 83 name;
 #X obj 82 121 symbol;
@@ -106,7 +106,7 @@
 #X restore 256 203 pd drums0503;
 #X obj 255 229 drums 2 d0503;
 #X msg 385 184 d0504;
-#N canvas 1470 420 286 428 drumburst0504 1;
+#N canvas 1470 420 286 428 drumburst0504 0;
 #X obj 65 43 inlet;
 #X text 65 26 name;
 #X obj 65 64 symbol;
@@ -120,6 +120,7 @@
 #X connect 3 0 4 0;
 #X restore 383 207 pd drumburst0504;
 #X obj 384 231 drum-burst 3 d0504;
+#X obj 437 106 loadbang;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 4 0 9 0;
@@ -131,11 +132,10 @@
 #X connect 6 0 32 0;
 #X connect 9 0 23 0;
 #X connect 10 0 26 0;
-#X connect 13 0 15 0;
-#X connect 13 0 16 0;
-#X connect 13 0 17 0;
-#X connect 13 0 20 0;
 #X connect 13 0 32 2;
+#X connect 13 0 29 1;
+#X connect 13 0 26 1;
+#X connect 13 0 23 1;
 #X connect 15 0 21 0;
 #X connect 16 0 24 0;
 #X connect 17 0 27 0;
@@ -150,3 +150,7 @@
 #X connect 29 0 18 0;
 #X connect 29 1 19 0;
 #X connect 30 0 31 0;
+#X connect 33 0 15 0;
+#X connect 33 0 16 0;
+#X connect 33 0 17 0;
+#X connect 33 0 20 0;
