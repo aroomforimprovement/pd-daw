@@ -193,9 +193,9 @@
 #X obj 451 27 loadbang;
 #X msg 451 48 0;
 #X obj 514 197 s~ guitar-aud;
-#N canvas 794 68 839 415 output 1;
+#N canvas 794 68 839 415 output 0;
 #X obj 51 260 *~;
-#N canvas 1429 656 450 300 output-vol 1;
+#N canvas 1429 656 450 300 output-vol 0;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
 #X floatatom 169 75 5 0 0 0 - - -, f 5;
 #X floatatom 206 69 5 0 0 0 - - -, f 5;
