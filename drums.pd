@@ -1,4 +1,4 @@
-#N canvas -8 -8 1920 997 10;
+#N canvas -7 0 1918 988 10;
 #X obj 37 487 inlet;
 #X text 12 469 start/stop;
 #X floatatom 19 778 5 0 0 0 - - -, f 5;
@@ -32,25 +32,25 @@
 #X obj 285 60 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 511 248 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 11 256;
 #X obj 436 248 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 778 60 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 1 256;
+-1 -1 0 256;
 #X obj 696 60 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 1 256;
+-1 -1 0 256;
 #X obj 922 60 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 847 60 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 1 256;
+-1 -1 0 256;
 #X obj 778 124 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 696 124 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 1 256;
+-1 -1 0 256;
 #X obj 922 124 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 847 124 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 9 256;
+-1 -1 0 256;
 #X obj 771 184 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 696 184 nbx 5 20 0 9 0 1 empty empty empty 0 -8 0 12 -262144
@@ -70,7 +70,7 @@
 #X obj 1306 60 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 1224 60 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 9 256;
 #X obj 1450 60 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 1375 60 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
@@ -78,7 +78,7 @@
 #X obj 1303 122 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 1224 124 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 9 256;
 #X obj 1450 124 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 1375 124 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
@@ -86,7 +86,7 @@
 #X obj 1297 185 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 1221 185 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
--1 -1 0 256;
+-1 -1 9 256;
 #X obj 1446 185 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
 -1 -1 0 256;
 #X obj 1371 185 nbx 5 20 0 15 0 1 empty empty empty 0 -8 0 12 -262144
@@ -102,7 +102,7 @@
 #X obj 17 740 machine, f 264;
 #X floatatom 1570 783 5 0 0 0 - - -, f 5;
 #X obj 1572 824 outlet;
-#X obj 37 518 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 16 674 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X text 1597 639 track;
 #X obj 1598 704 \$1;
@@ -161,7 +161,45 @@
 #X obj 511 94 r \$2d108;
 #X obj 511 158 r \$2d112;
 #X obj 511 216 r \$2d116;
+#N canvas 941 202 450 300 doubletap 0;
+#X obj 58 17 inlet;
+#X text 98 16 1/0 from footswitch;
+#X obj 101 38 sel 1;
+#X obj 58 38 sel 0;
+#X obj 58 83 timer;
+#X obj 101 83 timer;
+#X obj 58 104 expr $f1 < 500;
+#X obj 58 125 sel 1;
+#X obj 58 167 outlet;
+#X obj 58 59 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 101 59 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 78 58 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 121 58 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 58 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 2 0 10 0;
+#X connect 2 1 12 0;
+#X connect 3 0 9 0;
+#X connect 3 1 11 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 13 0;
+#X connect 9 0 4 0;
+#X connect 10 0 5 0;
+#X connect 11 0 4 1;
+#X connect 12 0 5 1;
+#X connect 13 0 8 0;
+#X restore 43 519 pd doubletap;
+#X obj 43 540 s \$1d-tap;
 #X connect 0 0 55 0;
+#X connect 0 0 112 0;
 #X connect 2 0 3 0;
 #X connect 4 0 52 13;
 #X connect 5 0 52 3;
@@ -268,3 +306,4 @@
 #X connect 109 0 10 0;
 #X connect 110 0 14 0;
 #X connect 111 0 18 0;
+#X connect 112 0 113 0;
