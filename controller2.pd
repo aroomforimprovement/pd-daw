@@ -23,7 +23,7 @@
 #N canvas 1200 295 450 300 on-off 0;
 #X obj 46 18 notein;
 #X floatatom 46 39 5 0 0 0 - - -, f 5;
-#X floatatom 88 39 5 0 0 0 - - -, f 5;
+#X floatatom 79 39 5 0 0 0 - - -, f 5;
 #X obj 46 71 spigot;
 #X obj 46 92 sel 70 71;
 #X obj 51 140 outlet;
