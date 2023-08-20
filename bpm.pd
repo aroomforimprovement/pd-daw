@@ -44,7 +44,7 @@
 #X msg 284 132 0;
 #X obj 609 160 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#N canvas 1222 630 668 300 increment 1;
+#N canvas 1222 630 668 300 increment 0;
 #X obj 220 59 inlet;
 #X obj 290 60 inlet;
 #X obj 220 82 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -132,12 +132,11 @@
 #X restore 606 193 pd increment;
 #X obj 515 72 sel 56 48 40 32 24 57 58 49 50 41 42;
 #X floatatom 606 214 5 0 0 0 - - -, f 5;
-#N canvas 0 50 450 300 bpm-slider 0;
+#N canvas 0 50 450 300 bpm-slider 1;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
 #X floatatom 169 75 5 0 0 0 - - -, f 5;
 #X floatatom 206 69 5 0 0 0 - - -, f 5;
 #X obj 163 31 ctlin;
-#X obj 132 83 / 100;
 #X obj 94 136 spigot;
 #X floatatom 94 157 5 0 0 0 - - -, f 5;
 #X msg 169 130 1;
@@ -145,21 +144,22 @@
 #X msg 169 172 0;
 #X obj 94 177 outlet;
 #X obj 169 95 sel 48;
-#X connect 0 0 4 0;
-#X connect 1 0 11 0;
+#X obj 132 83 * 2;
+#X connect 0 0 11 0;
+#X connect 1 0 10 0;
 #X connect 3 0 0 0;
 #X connect 3 1 1 0;
 #X connect 3 2 2 0;
 #X connect 4 0 5 0;
-#X connect 5 0 6 0;
-#X connect 6 0 10 0;
-#X connect 7 0 5 1;
+#X connect 5 0 9 0;
+#X connect 6 0 4 1;
+#X connect 6 0 7 0;
 #X connect 7 0 8 0;
-#X connect 8 0 9 0;
-#X connect 9 0 5 1;
-#X connect 11 0 7 0;
-#X restore 658 304 pd bpm-slider;
-#X obj 658 325 hsl 128 15 20 240 0 0 empty empty empty -2 -8 0 10 -262144
+#X connect 8 0 4 1;
+#X connect 10 0 6 0;
+#X connect 11 0 4 0;
+#X restore 695 193 pd bpm-slider;
+#X obj 647 230 hsl 128 15 20 240 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X connect 0 0 7 0;
 #X connect 0 0 19 0;
