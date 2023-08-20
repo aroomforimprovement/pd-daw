@@ -39,7 +39,7 @@
 #X obj 93 140 bank02;
 #X obj 514 173 input;
 #X obj 144 140 bank03;
-#N canvas 32 417 747 423 loops 1;
+#N canvas 32 417 747 423 loops 0;
 #X obj 73 311 g-loop loop0101 4;
 #X obj 97 111 footswitch, f 66;
 #X obj 78 159 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -193,7 +193,7 @@
 #X obj 451 27 loadbang;
 #X msg 451 48 0;
 #X obj 514 197 s~ guitar-aud;
-#N canvas 794 68 971 415 output 1;
+#N canvas 794 68 971 415 output 0;
 #X obj 51 260 *~;
 #N canvas 1429 656 450 300 output-vol 0;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
@@ -228,7 +228,7 @@
 #X obj 51 281 dac~;
 #X obj 269 127 loadbang;
 #X msg 269 148 0;
-#N canvas 1462 0 450 300 reverb 1;
+#N canvas 1462 0 450 300 reverb 0;
 #X obj 138 153 rev1~, f 19;
 #X obj 138 111 inlet~;
 #X obj 139 183 outlet~;
