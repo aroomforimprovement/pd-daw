@@ -193,7 +193,7 @@
 #X obj 451 27 loadbang;
 #X msg 451 48 0;
 #X obj 514 197 s~ guitar-aud;
-#N canvas 480 69 971 415 output 1;
+#N canvas 480 69 971 415 output 0;
 #X obj 51 260 *~;
 #N canvas 1429 656 450 300 output-vol 1;
 #X floatatom 132 63 5 0 0 0 - - -, f 5;
@@ -207,11 +207,11 @@
 #X obj 169 137 delay 100;
 #X msg 169 158 0;
 #X obj 94 177 outlet;
-#X obj 169 95 sel 56;
 #X obj 275 98 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
+#X obj 169 95 sel 7;
 #X connect 0 0 4 0;
-#X connect 1 0 11 0;
+#X connect 1 0 12 0;
 #X connect 3 0 0 0;
 #X connect 3 1 1 0;
 #X connect 3 2 2 0;
@@ -222,8 +222,8 @@
 #X connect 7 0 8 0;
 #X connect 8 0 9 0;
 #X connect 9 0 5 1;
-#X connect 11 0 7 0;
-#X connect 12 0 6 0;
+#X connect 11 0 6 0;
+#X connect 12 0 7 0;
 #X restore 271 180 pd output-vol;
 #X obj 51 281 dac~;
 #X obj 269 127 loadbang;
